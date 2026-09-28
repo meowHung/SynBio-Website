@@ -11,14 +11,14 @@
       document.documentElement.setAttribute('data-theme', theme);
     })();
   </script>
-  <title>Brightside Studio — About</title>
+  <title>SynBio Stuttgart - About</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" aria-pressed="false">
     <span class="theme-toggle-icon icon-sun" aria-hidden="true">☀️</span>
-    <span class="theme-toggle-icon icon-moon" aria-hidden="true">🌙</span>
+    <span class="theme-toggle-icon icon-moon" aria-hidden="true">&#127769;</span>
   </button>
 
   <header class="site-header">
@@ -29,10 +29,33 @@
       </a>
       <div class="header-right">
         <nav class="site-nav" id="siteNav">
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="about.html" class="active">About</a>
-          <a href="contact.html">Contact</a>
+          <a href="news.html">News</a>
+          <div class="nav-dropdown" id="projectsDropdown">
+            <button class="nav-dropdown-toggle" id="projectsToggle" aria-haspopup="true" aria-expanded="false">
+              Projects <span class="nav-dropdown-arrow" aria-hidden="true">&#9662;</span>
+            </button>
+            <div class="nav-dropdown-menu nav-dropdown-menu-wide" id="projectsMenu">
+              <a href="brobiotics/index_brobiotics.html">2027 - brobiotics</a>
+              <a href="aralex/index_aralex.html">2025 - ARALEX</a>
+              <a href="dentozym/index_dentozym.html">2023 - DentoZym</a>
+              <a href="tardisun/index_tardisun.html">2021 - Tardisun</a>
+              <a href="lac-man/index_lac-man.html">2020 - LAC-MAN</a>
+              <a href="VNOO/index_VNOO.html">2019 - Vibrio natriegens Operon Optimization</a>
+              <a href="AGBC/index_AGBC.html">2018 - Anti-Germ Bio-coating</a>
+              <a href="BDO/index_BDO.html">2017 - Biological Drain Opener</a>
+            </div>
+          </div>
+          <a href="mission.html">Our Mission</a>
+          <a href="igem.html">What is iGEM?</a>
+          <div class="nav-dropdown" id="headercontactDropdown">
+            <button class="nav-dropdown-toggle" id="headercontactToggle" aria-haspopup="true" aria-expanded="false">
+              For those interesed <span class="nav-dropdown-arrow" aria-hidden="true">&#9662;</span>
+            </button>
+            <div class="nav-dropdown-menu" id="headercontactMenu">
+              <a href="contact_students.html">For students</a>
+              <a href="contact_companies.html">For companies & organizations</a>
+            </div>
+          </div>
         </nav>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
           <span></span><span></span><span></span>
